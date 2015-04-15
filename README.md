@@ -1,5 +1,5 @@
 # What is 'markdown-server' ?
-MarkdownをHTML化して`text/html`形式でレスポンスするシンプルなWebアプリケーションです。Markdown Engineは**Github Flavered Markdown**です。
+MarkdownをHTML化して`text/html`形式でレスポンスするシンプルなWebアプリケーションです。Markdown Engineは**Github flavored Markdown**です。
 
 ## How to use
 
@@ -43,7 +43,7 @@ ms_port        = '8009'
 ms_host        = 'localhost'
 ```
 
-* デフォルトの Markdown Engine は**Github Flavered Markdown**です。異なるスタイルを適用したい場合は好みに応じてCSSファイルを差し替え、`env.py`を編集してください。
+* デフォルトの Markdown Engine は**Github flavored Markdown**です。異なるスタイルを適用したい場合は好みに応じてCSSファイルを差し替え、`env.py`を編集してください。
 ```python
 css_name       = 'github.css'
 markdown_type  = 'gfm'

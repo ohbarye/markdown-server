@@ -1,6 +1,6 @@
 # PythonでMarkdownをHTML化
 
-Github Flavered Markdown で HTML化します。
+Github flavored Markdown で HTML化します。
 
 ## 使用したライブラリ
 
