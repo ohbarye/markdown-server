@@ -1,7 +1,5 @@
 # What is 'markdown-server' ?
-MarkdownをHTML化して`text/html`形式でレスポンスするシンプルなWebアプリケーションです。
-
-Markdown Engineは**Github Flavered Markdown**です。
+MarkdownをHTML化して`text/html`形式でレスポンスするシンプルなWebアプリケーションです。Markdown Engineは**Github Flavered Markdown**です。
 
 ## How to use
 
@@ -9,20 +7,23 @@ Markdown Engineは**Github Flavered Markdown**です。
 python実行環境が必要です。
 
 ### Library Dependencies
-下記ライブラリに依存しています。
+`packages_requirements.txt`を参照してください。
+主に下記ライブラリに依存しています。
 
 |No.|Name|Description|
 |:---|:---|:---|
 |1|markdown|Markdown -> HTML 変換ライブラリ|
 |2|pygments|シンタックスハイライト用|
 |3|bottle|Webアプリケーションフレームワーク|
-|4|codecs|ファイル読み書き用|
 
 ### Just try
-試すだけであれば特別な準備は何も必要ありません。
+サーバを起動して実行結果を確認する為に、特別な準備は何も必要ありません。
 下記コマンドを実行するだけでサーバが起動します。
 
 ```
+$ git clone https://github.com/ohbarye/markdown-server
+$ cd markdown-server
+$ pip install -r packages_requirements.txt
 $ python start_sarver.py
 ```
 
