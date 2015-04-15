@@ -24,7 +24,7 @@ python実行環境が必要です。
 $ git clone https://github.com/ohbarye/markdown-server
 $ cd markdown-server
 $ pip install -r packages_requirements.txt
-$ python start_sarver.py
+$ python start_server.py
 ```
 
 サーバが起動したら下記アドレスにアクセスし、サンプルMarkdownファイルの変換結果を確認してみてください。
@@ -33,9 +33,9 @@ $ open http://localhost:8009/sample.md
 ```
 
 ### Do as you like
-* markdown-server は`resources/markdown`ディレクトリに配置されたファイルに対し、`http://host/[file_name]`の形式でルーティングを提供します。任意のファイルを置いてください。
+* markdown-server は`resources/markdown`ディレクトリに配置されたMarkdownファイルに対し、`http://host/[file_name]`の形式でルーティングを提供します。任意のファイルを置いてください。
 
-* 変換されたファイルは`resources/html`ディレクトリに配置されます。HTMLファイルにCSSも組み込まれています。
+* 変換されたファイルは`resources/html`ディレクトリに配置されます。生成されるHTMLファイルにCSSも組み込まれているので配布も容易です。
 
 * ホスト名やポート番号などの環境変数は`env.py`にまとめています。適宜変更してください。
 ```python
@@ -43,7 +43,7 @@ ms_port        = '8009'
 ms_host        = 'localhost'
 ```
 
-* デフォルトの Markdown Engine は**Github Flavered Markdown**です。好みに応じてCSSファイルを差し替え、`env.py`を編集してください。
+* デフォルトの Markdown Engine は**Github Flavered Markdown**です。異なるスタイルを適用したい場合は好みに応じてCSSファイルを差し替え、`env.py`を編集してください。
 ```python
 css_name       = 'github.css'
 markdown_type  = 'gfm'
