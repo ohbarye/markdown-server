@@ -10,4 +10,8 @@ def gfmize(resource):
     html_file_name = converter.convert(resource)
     return static_file(html_file_name, root=ms_root)
 
-run(host=ms_host,port=ms_port,debug=ms_debug,reloader=ms_reloader)
+def main():
+    run(host=ms_host,port=ms_port,debug=ms_debug,reloader=ms_reloader)
+
+if __name__ == '__main__':
+    run(host=ms_host,port=ms_port,debug=ms_debug,reloader=ms_reloader)

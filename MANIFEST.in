@@ -1,0 +1,2 @@
+recursive-include markdownserver *.css *.html *.md
+include LICENSE
