@@ -11,7 +11,7 @@ def read_file(filename):
 
 setup(
     name = 'markdown-server',
-    version  = '0.1.0',
+    version  = '0.1.1',
     description = 'A simple markdown server.',
     long_description = read_file('README.rst'),
     author = 'Masato Ohba',
@@ -35,8 +35,10 @@ setup(
         'Pygments',
         'py-gfm',
     ],
-    entry_points = """
-        [console_scripts]
-        mdsvr = markdownserver:main
-    """,
+    entry_points = {
+        'console_scripts': [
+            'mdsvr = markdownserver:main',
+            'convert = markdownserver.markdown_converter:main'
+        ]
+    },
 )

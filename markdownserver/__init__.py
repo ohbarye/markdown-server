@@ -1,5 +1,5 @@
 from bottle import route,run,template,static_file
-from md_to_html import MarkdownConverter
+from markdown_converter import MarkdownConverter
 from env import *
 
 converter = MarkdownConverter()
@@ -14,4 +14,4 @@ def main():
     run(host=ms_host,port=ms_port,debug=ms_debug,reloader=ms_reloader)
 
 if __name__ == '__main__':
-    run(host=ms_host,port=ms_port,debug=ms_debug,reloader=ms_reloader)
+    main()

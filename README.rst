@@ -23,9 +23,12 @@ Library Dependencies
 
 See `requirements.txt`.
 
---------------------
+--------
 Just try
---------------------
+--------
+
+Start server
+------------
 
 You don't need any special preparation to try to start server. Just execute below comands.
 
@@ -45,6 +48,15 @@ If server start up successfully, browse below URL and check the converted result
 ::
 
     $ open http://localhost:8009/sample.md
+
+Only Conversion
+---------------
+
+Additionally, You can use the conversion function alone.
+
+::
+
+    (.venv)$ convert source_md_file target_html_file
 
 --------------
 Do as you like
