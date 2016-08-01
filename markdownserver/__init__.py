@@ -9,7 +9,7 @@ converter = MarkdownConverter()
 def gfmize(resource):
 
     html_file_name = os.path.basename(converter.convert(resource))
-    return static_file(os.path.join(html_dir, html_file_name), root=root_path)
+    return static_file(os.path.join('resources/html', html_file_name), root=root_path)
 
 def main():
     run(host=ms_host,port=ms_port,debug=ms_debug,reloader=ms_reloader)
