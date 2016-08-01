@@ -36,7 +36,7 @@ class MarkdownConverter(object):
         return md_file.read()
 
     def write_html(self,body,file_name,dst):
-        html_path = os.path.join(html_root, file_name + html_extension)
+        html_path = os.path.join(html_dir, file_name + html_extension)
 
         if dst != "":
             html_path = dst

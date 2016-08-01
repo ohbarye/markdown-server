@@ -11,7 +11,7 @@ def read_file(filename):
 
 setup(
     name = 'markdown-server',
-    version  = '0.1.2',
+    version  = '0.1.3',
     description = 'A simple markdown server.',
     long_description = read_file('README.rst'),
     author = 'Masato Ohba',
