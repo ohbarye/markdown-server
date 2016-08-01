@@ -37,7 +37,7 @@ setup(
     ],
     entry_points = {
         'console_scripts': [
-            'mdsvr = markdownserver:main',
+            'markdownserver = markdownserver:main',
             'convert = markdownserver.markdown_converter:main'
         ]
     },
