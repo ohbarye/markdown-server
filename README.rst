@@ -39,7 +39,7 @@ You don't need any special preparation to try to start server. Just execute belo
     $ virtualenv .venv
     $ source .venv/bin/activate
     (.venv)$ pip install -r requirements.txt
-    (.venv)$ mdsvr
+    (.venv)$ markdownserver
         Bottle v0.12.8 server starting up (using WSGIRefServer())...
         Listening on http://localhost:8009/
 
