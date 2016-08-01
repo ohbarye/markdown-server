@@ -30,7 +30,7 @@ Just try
 Start server
 ------------
 
-You don't need any special preparation to try to start server. Just execute below comands.
+You don't need any special preparation to try to start server. Just execute below commands.
 
 ::
 
@@ -42,6 +42,16 @@ You don't need any special preparation to try to start server. Just execute belo
     (.venv)$ markdownserver
         Bottle v0.12.8 server starting up (using WSGIRefServer())...
         Listening on http://localhost:8009/
+
+Or, you can install from PyPi.
+
+::
+
+    (.venv)$ pip install markdown-server
+    (.venv)$ markdownserver
+        Bottle v0.12.8 server starting up (using WSGIRefServer())...
+        Listening on http://localhost:8009/
+
 
 If server start up successfully, browse below URL and check the converted result.
 
