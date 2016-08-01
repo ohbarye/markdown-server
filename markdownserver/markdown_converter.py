@@ -1,12 +1,13 @@
 import markdown as md
 import codecs
 import sys
+import os
 from env import *
 
 class MarkdownConverter(object):
 
     def __init__(self):
-        css = codecs.open(css_root + css_name,encoding=ms_encoding,mode='r')
+        css = codecs.open(css_path,encoding=ms_encoding,mode='r')
         self.html_header = '''
             <html>
             <head>
@@ -31,11 +32,11 @@ class MarkdownConverter(object):
         return self.write_html(code,src,dst)
 
     def read_md(self,file_name):
-        md_file = codecs.open(markdown_root + file_name,encoding=ms_encoding,mode='r')
+        md_file = codecs.open(os.path.join(markdown_dir, file_name),encoding=ms_encoding,mode='r')
         return md_file.read()
 
     def write_html(self,body,file_name,dst):
-        html_path = html_root + file_name + html_extension
+        html_path = os.path.join(html_root, file_name + html_extension)
 
         if dst != "":
             html_path = dst
