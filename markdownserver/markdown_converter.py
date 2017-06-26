@@ -40,7 +40,11 @@ class MarkdownConverter(object):
 
         if dst != "":
             html_path = dst
-
+        try:
+            os.makedirs('/'.join(html_path.replace('\\', '/').split('/')[:-1]))
+        except OSError as exc:
+            pass
+        
         html_file = codecs.open(html_path,encoding=ms_encoding,mode='w')
         html_file.write(self.html_header + body + self.html_footer)
         return html_path
