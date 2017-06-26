@@ -5,10 +5,15 @@ import os
 
 converter = MarkdownConverter()
 
-@route('/<resource>')
+
+@route('/<resource:re:.*\.md>')
 def gfmize(resource):
+    if resource == 'favicon.ico':
+        return ''
 
     html_file_name = os.path.basename(converter.convert(resource))
+    if '/' in resource:
+        html_file_name = '/'.join(resource.split('/')[:-1]) + '/' + html_file_name
     return static_file(os.path.join('resources/html', html_file_name), root=root_path)
 
 def main():
