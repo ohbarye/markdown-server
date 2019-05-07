@@ -31,7 +31,7 @@ setup(
     license = 'MIT License',
     install_requires = [
         'bottle',
-        'Markdown',
+        'Markdown==2.6.11',
         'Pygments',
         'py-gfm',
     ],
