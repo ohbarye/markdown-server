@@ -12,9 +12,8 @@ How to use
 Runtime Environment
 --------------------
 
-:Python:        2.7.9
-:pip:           6.1.1
-:virtualenv:    12.1.1
+:Python:        3.7
+:pip:           19.1.1
 
 
 --------------------
