@@ -2,7 +2,7 @@ import os
 
 ms_encoding = "utf-8"
 ms_port = "8009"
-ms_host = "localhost"
+ms_host = '0.0.0.0'
 ms_debug = True
 ms_reloader = True
 html_extension = ".html"
