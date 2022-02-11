@@ -36,7 +36,7 @@ setup(
     entry_points={
         "console_scripts": [
             "markdownserver=markdownserver:main",
-            "convert=markdownserver.markdown_converter:main",
+            "markdownconvert=markdownserver.markdown_converter:main",
         ]
     },
 )
