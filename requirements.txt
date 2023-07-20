@@ -3,7 +3,7 @@ linecache2==1.0.0
 Markdown==2.6.2
 -e git+https://github.com/ohbarye/markdown-server@f85a63ba06ca7cb5beb59bd96153d7ba1fa867ae#egg=markdownserver-master
 py-gfm==0.1.0
-Pygments==2.7.4
+Pygments==2.15.0
 six==1.9.0
 traceback2==1.4.0
 unittest2==1.0.1
